@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  border-bottom: 3px solid #31b572;
+  background-color: #f8f9fa;
+}
+.header ul{
+    display: flex;
+    padding: 25px;
+    gap: 45px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
