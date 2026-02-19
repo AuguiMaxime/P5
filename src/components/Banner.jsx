@@ -1,5 +1,5 @@
 import logo from "./assets/LOGOHeader.png";
-import '../styles/Banner.css'
+import '../styles/Banner.scss'
 
 
 const Banner = () => {

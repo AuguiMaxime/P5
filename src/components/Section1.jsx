@@ -1,5 +1,5 @@
 import background from "./assets/Background.png";
-import '../styles/Section1.css'
+import '../styles/Section1.scss'
 
 const Section1 = () => {
   return (
