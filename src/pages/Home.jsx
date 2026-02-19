@@ -1,8 +1,10 @@
-import Section1 from '../components/Section1';
+import BannerHome from '../components/BannerHome';
+import Gallery from '../components/Gallery';
 
 const Home = () => (
     <>
-    <Section1/>
+    <BannerHome/>
+    <Gallery/>
     </>
 )
 export default Home;

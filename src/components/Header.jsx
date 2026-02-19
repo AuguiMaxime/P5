@@ -1,8 +1,8 @@
 import logo from "./assets/LOGOHeader.png";
-import '../styles/Banner.scss'
+import '../styles/Header.scss'
 
 
-const Banner = () => {
+const Header = () => {
   return (
   <div className="header">
     <img src={logo} alt="Logo"/>
@@ -15,4 +15,4 @@ const Banner = () => {
  
 }
 
-export default Banner;
+export default Header;
