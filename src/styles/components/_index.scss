@@ -1,0 +1,12 @@
+@use '../base/variables';
+@use '../base/global';
+
+.page-container{
+    margin: global.$margin
+}
+
+@media (max-width: 375px) {
+  .page-container {
+    margin: 15px;
+  }
+}

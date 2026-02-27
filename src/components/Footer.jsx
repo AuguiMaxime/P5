@@ -1,10 +1,10 @@
 import logoFooter from "./assets/LOGOFooter.png";
-import '../styles/Footer.scss'
+
 
 const Footer = () => {
   return (
   <div className="footer">
-    <img src={logoFooter} alt="Logo"/>
+    <img src={logoFooter} alt="Logo" className="logo-footer"/>
     <p>© 2020 Kasa. All rights reserved</p>
   </div>
   );

@@ -1,0 +1,47 @@
+@use '../base/variables';
+@use '../base/global';
+
+
+.header {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: variables.$background-color;
+  height: 68px;
+}
+
+.nav {
+  display: flex;
+  gap: 57px;
+  cursor: pointer;
+  font-size: variables.$big-font-size;
+  font-weight: variables.$medium-font-weight;
+  
+}
+.nav a {
+    text-decoration: none;
+    color: variables.$text-color;
+}
+.logo{
+  width: 210.32px;
+  height: 68px;
+}
+
+
+@media (max-width: 375px) {
+  
+  .logo{
+  width: 145px;
+  height: 46.88px;
+}
+
+.nav {
+  gap: 26px;
+  font-size: 12px;
+  font-weight: 500;
+  
+}
+
+  
+  }

@@ -1,11 +1,15 @@
 import background from "./assets/Background-home.png";
-import '../styles/Banner.scss'
+
 
 const BannerHome = () => {
   return (
   <div className="banner">
     <img src={background} alt="Image paysage"/>
-    <h1>Chez vous, partout et ailleurs</h1>
+    <div className="overlay"></div>
+    <h1>
+      <span className="line1">Chez vous, </span> 
+      <span className="line2">partout et ailleurs</span>
+      </h1>
   </div>
   );
  

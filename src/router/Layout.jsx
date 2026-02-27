@@ -3,8 +3,10 @@ import Footer from '../components/Footer';
 
 const Layout = ({ children }) => (
   <>
+  <div className='page-container'>
     <Header />
     {children}
+    </div>
     <Footer />
   </>
 );
