@@ -4,7 +4,7 @@
 
 .header {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   align-items: center;
   justify-content: space-between;
   background-color: variables.$background-color;
@@ -30,6 +30,8 @@
 
 
 @media (max-width: 375px) {
+  .header {
+  margin-bottom: 10px;}
   
   .logo{
   width: 145px;

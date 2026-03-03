@@ -1,18 +1,31 @@
 @use '../base/variables';
 @use '../base/global';
 
-.collapse-content{
-     width: 50%;
-     height: 52px;
+.collapses{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
+
+
+.collapse-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    width: 100%;    
+    
+}
 .collapse-header{
   display: flex;
   justify-content: space-between;
   align-items: center;  
-  padding-left: 10px;         
+  padding-left: 10px;  
+  padding-right: 10px;         
   background-color: variables.$primary-color;
   border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .collapse-header h3{
@@ -21,7 +34,47 @@
     color: white;
 }
 
+
 .collapse-header button{
     background-color: variables.$primary-color;
     border: none;
+}
+
+.collapse-text{
+    padding: 15px 20px;  
+}
+
+@media (max-width: 375px) {
+    
+    
+.collapses{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.collapse-content{
+     width: 100%;
+     margin-top: 15px;
+}
+.collapse-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  height: 30px;
+  overflow: hidden;
+
+}
+
+.collapse-header h3{
+    font-size: 13px;
+}
+
+.collapse-header button{
+ padding-right: 35px;
+ width: 16px;
+ height: 9.15;
+}
+.collapse-text{
+    padding:0px 5px;  
+}
 }

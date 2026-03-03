@@ -11,15 +11,19 @@
 width: 122px;
 height: 39.44px;
 }
-.footer p{
+.footer h2{
     font-weight: 500;
     font-size: 24px;
 }
 
 @media (max-width: 375px) {
-  .footer p{
+  .footer h2{
     font-weight: 500;
     font-size: 12px;
+}
+.footer-line1, 
+footer-line2{
+    display: block;
 }
 
 }

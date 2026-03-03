@@ -1,42 +1,8 @@
 @use '../base/variables';
 @use '../base/global';
-
-.slideshow{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    height: 415px;
-}
-.slideshow-cover{
-    width: 100%;         
-    height: 100%;        
-    object-fit: cover;    
-    object-position: center;
-    display: block;  
-}
-.previous {
-    display: block;
-    position: absolute;
-    width: 46.68px;
-    height: 79.2px;
-    left: 10px;
-    top: 50%;
-}
-.next {
-    display: block;
-    position: absolute;
-    width: 46.68px;
-    height: 79.2px;
-    top: 50%;
-    right: 10px;
-}
-.slide-count{
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;    
+.card-content {
+  display: flex;
+  flex-direction: column;
 }
 .card-title{
     color: variables.$primary-color;
@@ -52,7 +18,6 @@
     font-weight: 500;
 }
 .host-content{
-    margin-top: 15px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -61,8 +26,13 @@
 
 .host-name{
     color: variables.$primary-color;
+    gap: 3px;
     font-size: 18px;
     font-weight: 500;
+    text-align: right;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;  
 }
 .host-img{
     height: 64px;
@@ -72,8 +42,13 @@
 }
 .card-rating{
     display: flex;
-    color: variables.$primary-color;
     font-size: 36px; 
+}
+.star.active {
+  color: variables.$primary-color;
+}
+.star.inactive {
+  color: #E3E3E3;
 }
 .card-tags{
     display: flex;
@@ -93,24 +68,103 @@
      border-radius: 10px;
 }
 
-.collapses{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-}
+
 .card-loc{
     display: flex;
     flex-direction: column;
 }
 
+.card-host-rating{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.rating-host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
 .logement-info{
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
-.card-rating-tags{
-    display: flex;
-    justify-content: space-between;
+.card-equipment{
+    font-size: 18px;
+    font-weight: 400;
+
 }
+.card-info{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media (max-width: 375px) {
+    
+.host-name{
+    padding-top: 0px;
+}
+
+
+.card-equipment{
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.card-info{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.rating-host {
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+  }
+    .card-title{
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-location{
+    font-size: 14px;
+}
+.host-content{
+    order: 2;
+    gap: 5px;
+}
+
+.host-name{
+    font-size: 12px;
+    
+}
+.host-img{
+    height: 32px;
+    width: 32px;
+}
+.card-rating{
+    font-size: 18px; 
+    
+}
+.card-tags{
+    gap: 5px;
+    
+}
+.card-tags span{
+     font-size: 10px;   
+     width: 84px;
+     height: 18px;}
+
+
+
+.logement-info{
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+
+  }

@@ -1,0 +1,66 @@
+@use '../base/variables';
+@use '../base/global';
+
+.slideshow{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+}
+.slideshow-cover{
+    width: 100%;         
+    height: 100%;        
+    object-fit:cover;     
+}
+.previous {
+    display: block;
+    position: absolute;
+    width: 46.68px;
+    height: 79.2px;
+    left: 10px;
+    top: 50%;
+}
+.next {
+    display: block;
+    position: absolute;
+    width: 46.68px;
+    height: 79.2px;
+    top: 50%;
+    right: 10px;
+}
+.slide-count{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;    
+}
+
+@media (max-width: 375px) {
+
+.slideshow{
+    height: 255px;
+}
+.slideshow-cover{
+    width: 100%;         
+    height: 100%;        
+    object-fit:cover;    
+    object-position: center;
+    display: block;  
+}
+.previous {
+   width: 11.67px;
+   height: 19.8px;
+}
+.next {
+    width: 11.67px;
+    height: 19.8px;
+}
+.slide-count{
+    display: none;  
+}
+
+  }

@@ -1,0 +1,64 @@
+@use '../base/variables';
+@use '../base/global';
+
+
+.collapse-header-about button{
+    background-color: variables.$primary-color;
+    border: none;
+}
+
+.collapse-content-about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    
+}
+.collapse-header-about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding-left: 10px;   
+  padding-right: 10px;      
+  background-color: variables.$primary-color;
+  border-radius: 10px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.collapse-header-about h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+.collapse-text-about{
+    padding-top: 10px;
+    margin: 10px auto; 
+    width: 75%;
+
+}
+
+@media (max-width: 375px) {
+ 
+
+.collapse-content-about{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.collapse-header-about{
+  padding-left: 10px;   
+  padding-right: 5px; 
+  width: 95%;     
+}
+
+.collapse-header-about h3{
+    font-size: 13px;
+    font-weight: 700;
+}
+  .collapse-text-about{
+    padding-top: 0px;
+    padding-right: 5px;
+    width: 95%;
+
+}
+}
