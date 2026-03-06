@@ -26,7 +26,7 @@ function Slideshow ({pictures}){
     
     return (
     <div className="slideshow">
-        <img src={pictures[currentIndex]} alt="Image Appartement" className="slideshow-cover"></img>
+        <img key={currentIndex} src={pictures[currentIndex]} alt="Image Appartement" className="slideshow-cover"></img>
         <img src={Previous} alt="Précedement" className="previous" onClick={prevSlide}/>
         <img src={Next} alt="Suivant" className="next" onClick={nextSlide}/>
         <p className="slide-count">

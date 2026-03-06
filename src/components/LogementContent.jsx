@@ -1,9 +1,8 @@
 
 import Logements from "../data/logements.json";
-import { useParams } from 'react-router-dom'
-import NotFound from "../pages/NotFound"
 import Collapse from "./Collapse";
 import Slideshow from "./Slideshow";
+import { useParams, Navigate } from "react-router-dom"
 
 
 function LogementContent(){
@@ -15,7 +14,7 @@ const lastName = nameParts.slice(1).join(" ");
 
 if (!logement){
   return (
-    <NotFound/>
+    <Navigate to="/404" />
   )
 }
 return (
@@ -33,6 +32,8 @@ return (
         ))}
       </div> 
     </div>
+
+    
 <div className="rating-host">
 
     <div className="host-content">
@@ -47,19 +48,12 @@ return (
       <div className="card-rating">
       {[1,2,3,4,5].map((star) => (
       <span key={star}
-       className={star <= logement.rating ? "star active" : "star inactive"}
-      >
-      ★
-      </span>
+       className={star <= logement.rating ? "star active" : "star inactive"}>
+      ★</span>
       ))}</div>
-    
-
 </div>
 
       </div>
-
-
-
 
 <div className="collapses">
        <Collapse title ="Description" > 

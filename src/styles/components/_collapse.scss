@@ -7,13 +7,12 @@
     gap: 50px;
 }
 
-
-
 .collapse-content{
     display: flex;
     flex-direction: column;
     margin-top: 35px;
-    width: 100%;    
+    width: 100%;  
+
     
 }
 .collapse-header{
@@ -26,6 +25,7 @@
   border-radius: 10px;
   width: 100%;
   margin: 0 auto;
+  height: 52px;
 }
 
 .collapse-header h3{
@@ -41,8 +41,19 @@
 }
 
 .collapse-text{
-    padding: 15px 20px;  
+    padding: 15px 20px; 
+    max-height:0;
+    overflow:hidden;
+    width: 97.5%;
+    transition:max-height 0.35s ease; 
 }
+.collapse-text.open{
+  max-height:500px;
+  background-color: #f6f6f6f6;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
 
 @media (max-width: 375px) {
     
@@ -62,6 +73,7 @@
   align-items: center;  
   height: 30px;
   overflow: hidden;
+  width: 97%;
 
 }
 
@@ -75,6 +87,8 @@
  height: 9.15;
 }
 .collapse-text{
-    padding:0px 5px;  
+    padding:0px 5px; 
+    width: 100%;
+    
 }
 }

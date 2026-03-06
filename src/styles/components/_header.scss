@@ -19,9 +19,12 @@
   font-weight: variables.$medium-font-weight;
   
 }
-.nav a {
+.nav-link {
     text-decoration: none;
     color: variables.$text-color;
+}
+.nav-link.active {
+  text-decoration: underline;
 }
 .logo{
   width: 210.32px;

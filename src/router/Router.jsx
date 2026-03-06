@@ -11,6 +11,7 @@ const Router = () => (
     <Route path="/about" element={<Layout><About /></Layout>} />
     <Route path="/logement/:id" element={<Layout><Logement /></Layout>} />
     <Route path="*" element={<Layout><NotFound /></Layout>} />
+    <Route path="/404" element={<Layout><NotFound /></Layout>} />
   </Routes>
 );
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import CollapseAbout from "./CollapseAbout";
 
 const AboutContent = ()=>{
